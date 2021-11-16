@@ -2,6 +2,6 @@
 -- If the database hbtn_0c_0 already exists, your script should not fail.
 -- You are not allowed to use the SELECT or SHOW statements.
 
-IF NOT EXISTS (SELECT 1 FROM information_schema.schemata WHERE schema_name = 'hbtn_0c_0') THEN
-    CREATE DATABASE hbtn_0c_0;
-END IF;
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0; -- Create database.
+SHOW DATABASES;
+DROP DATABASE IF EXISTS hbtn_0c_0; -- Removes database.
