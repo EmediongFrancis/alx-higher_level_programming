@@ -8,7 +8,8 @@
 let nextBigest = 0;
 const args = process.argv.slice(2);
 if (args.length > 1) {
-  args.sort();
-  nextBigest = args[args.length - 2];
+  args.sort((a, b) => a - b);
+  args.pop();
+  nextBigest = args[args.length - 1];
 }
 console.log(nextBigest);
