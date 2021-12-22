@@ -15,7 +15,7 @@ if __name__ == '__main__':
     )
     Cursor = setUp.cursor()
     Cursor.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY \
-    id ASC", (sys.argv[4]))
+    id ASC", (sys.argv[4],))
     qRows = Cursor.fetchall()
     for r in qRows:
         if r[1] == sys.argv[4]:
