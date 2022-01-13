@@ -13,4 +13,4 @@ if __name__ == "__main__":
     commits = dat.json()
     for c in commits[:10]:
         print(c.get('sha'), end=': ')
-        print(c.get('commit'.get('author').get('name')))
+        print(c.get('commit').get('author').get('name'))
