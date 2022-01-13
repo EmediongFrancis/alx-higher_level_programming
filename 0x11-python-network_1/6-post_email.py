@@ -3,7 +3,7 @@
     Send POST req and display response.
 '''
 import requests as req
-import sys 
+import sys
 
 if __name__ == "__main__":
     email = {'email': sys.argv[2]}
