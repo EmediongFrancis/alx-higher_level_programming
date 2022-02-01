@@ -12,8 +12,7 @@ request(url, (error, response, body) => {
   if (error) {
     console.log(error);
   } else {
-    const respBody = JSON.parse(body);
-    fs.writeFile(file, respBody, 'utf-8', (err) => {
+    fs.writeFile(file, body, 'utf-8', (err) => {
       if (err) throw err;
     });
   }
